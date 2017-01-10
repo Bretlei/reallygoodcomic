@@ -1,0 +1,42 @@
+<div id="fb-root"></div>
+<script>(function(d, s, id) {
+		var js, fjs = d.getElementsByTagName(s)[0];
+		if (d.getElementById(id)) return;
+		js = d.createElement(s); js.id = id;
+		js.src = "//connect.facebook.net/en_US/sdk.js#xfbml=1&version=v2.8";
+		fjs.parentNode.insertBefore(js, fjs);
+}(document, 'script', 'facebook-jssdk'));</script>
+
+<div id="nav">
+    {% if first %}
+        <b><a href="/{{ first.slug }}"><< </a></b>
+    {% endif %}
+    {% if prev %}
+            <b><a href="/{{ prev.slug }}">< </a></b>
+    {% else %}
+            <b><a href="">X </a></b>
+    {% endif %}
+    <b><a href="/archive">ARCHIVE</a></b>
+    {% if next %}
+        <b><a href="/{{ next.slug }}">> </a></b>
+    {% else %}
+            <b><a href="">X </a></b>
+    {% endif %}
+    {% if last %}
+        <b><a href="/{{ last.slug }}">>> </a></b>
+    {% endif %}
+
+    </div>
+
+    <div id="main_stle">
+    <!-- <p>{{ comic.title }}</p> !-->
+    <img src="/static/{{ comic.image_path }}">
+    </div>
+
+    <div id="comment_nav">
+    <b><h4>COMMENTS<h4></b1>
+    </div>
+
+    <div id="comment">
+    <div class="fb-comments" data-href="http://www.reallygoodcomic.com/{{ comic.slug }}" data-width="1040" data-numposts="5"></div>
+</div>

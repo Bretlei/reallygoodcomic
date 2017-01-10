@@ -1,0 +1,41 @@
+{% extends "layout.html" %}
+{% block body %}
+    <div id="nav">
+        {% if prev|length %}
+            <b><a href="/{{ prev[0].slug }}">< </a></b>
+        {% endif %}
+        <b><a href="/archive">ARCHIVE</a></b>
+        {% if next|length %}
+            <b><a href="/{{ next[0].slug }}">> </a></b>
+        {% endif %}
+    
+    </div>
+
+    <div id="main_stle">
+        {% for arch_comic in arch_comics%}
+        <p><a href ="/{{ arch_comic.slug }}">{{ arch_comic.title }}</a></p>
+        {% endfor %}
+    </div>
+<script>
+(function(i,s,o,g,r,a,m){i['GoogleAnalyticsObject']=r,i[r]=i[r]||function(){(i[r].q=i[r].q||[]).push(arguments)},i[r].1=1*new Date();a=s.createElement(o),
+  m=s.getElementsByTagName(o)[0];a.async=1;a.src=g;m.parentNode.insertBefore(a,m)
+  })(window,document,'script','https://www.google-analytics.com/analytics.js','ga');
+
+  ga('create', 'UA-88457445-1', 'auto');
+  ga('send', 'pageview');
+
+</script>
+
+<!--
+    <div id="comment_nav">
+    <b><h4>COMMENTS<h4></b1>
+    </div>
+
+    <div id="comment">
+    <p><u>bdbman</u>: Eventually this will be comments!</p>
+    <hr>
+    <p><u>mevans</u>: Wow, so exciting!</p>
+    <hr>
+    <p><u>panda-andreea</u>: So funny! I love this shit!</p>
+</div> -->
+{% endblock %}

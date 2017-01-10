@@ -1,0 +1,81 @@
+hr{
+margin: 0px;
+border-top:2px dotted;
+}
+
+body{
+text-align: center;
+#background-image: url("background.jpg");
+background-color: #AACEE2;
+font-family: Roboto, sans-serif;
+}
+
+h1{
+color: #3D687A;
+text-align: center;
+font-family: Baloo Bhaina, sans-serif;
+margin: -30px;
+font-size: 60px;
+}
+
+#nav{
+background-color: #666666;
+width: 1050px;
+height: 20px;
+margin-right: auto;
+margin-left: auto;
+}
+
+#nav a{
+color: black;
+text-decoration: none;
+text-align: center;
+padding: 25px;
+}
+
+#nav a:hover{
+color: white;
+}
+
+
+#main_stle{
+background-color: white;
+width: 1048px;
+margin-right: auto;
+margin-left: auto;
+#height: relative;
+border: 1px solid #666666;
+#box-shadow: 0px 0px 0px 1px #666666;
+opactiy: 20%;
+#border-radius: 0px 0px 10px 10px;
+}
+
+#main_style img{
+display: block;
+margin-left: auto;
+margin-right: auto;
+}
+
+#comment_nav{
+background-color: #666666;
+width: 1050px;
+height: 20px;
+margin-right: auto;
+margin-left: auto;
+}
+
+#comment{
+background-color: white;
+width: 1048px;
+margin-right: auto;
+margin-left: auto;
+height: relative;
+border: 1px solid #666666;
+#box-shadow: 0px 0px 0px 1px #666666;
+opactiy: 20%;
+}
+
+#comment p{
+text-align: left;
+margin-left: 10px;
+}
